@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+        <link href='https://fonts.googleapis.com/css?family=Raleway|Play' rel='stylesheet' type='text/css'>   </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -30,7 +30,7 @@
         <section class="makelist">
             <div class="content">
                 <form>
-                    <input type="text" class="myclass"  size="40" maxlength="35" name="listitem" placeholder="Enter Item Here!"> : <input type="submit" value="Add Item">
+                    <input type="text" class="myclass"  size="40" maxlength="35" name="listitem" placeholder="Enter Item Here!"> : <input class="myclass" type="submit" value="Add Item">
                 </form>
             </div>
         </section>
@@ -38,10 +38,10 @@
         <section class="showlist">
             <div class="content">
                 <ul>
-                    <li><label><input type="checkbox" id="cbox1" value="first_checkbox"> Item 1</label></li>
-                    <li><label><input type="checkbox" id="cbox2" value="second_checkbox"> Item 2</label></li>
-                    <li><label><input type="checkbox" id="cbox3" value="third_checkbox"> Item 3</label></li>
-                    <li><label><input type="checkbox" id="cbox4" value="fourth_checkbox"> Item 4</label></li>
+                    <li class="openItem"><img class="checkbx" src="./img/unchecked_checkbox.png" alt="unchecked checkbox" height="17" width="17">Open Item 1<img class="trash" src="./img/trash_recyclebin_empty_closed.png" alt="trash can" height="17" width="17"></li>
+                    <li class="openItem"><img class="checkbx" src="./img/unchecked_checkbox.png" alt="unchecked checkbox" height="17" width="17">Open Item 2<img class="trash" src="./img/trash_recyclebin_empty_closed.png" alt="trash can" height="17" width="17"></li>
+                    <li class="openItem"><img class="checkbx" src="./img/unchecked_checkbox.png" alt="unchecked checkbox" height="17" width="17">Open Item 3<img class="trash" src="./img/trash_recyclebin_empty_closed.png" alt="trash can" height="17" width="17"></li>
+                    <li class="closedItem"><img class="checkbx_chkd" src="./img/checked_checkbox.png" alt="unchecked checkbox" height="17" width="17">Colsed Item 4<img class="trash" src="./img/trash_recyclebin_empty_closed.png" alt="trash can" height="17" width="17"></li>
                 </ul>
             </div>
 
