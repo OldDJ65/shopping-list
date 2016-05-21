@@ -88,15 +88,96 @@ textarea {
 body {
     font-family: 'Lobster', cursive;
     font-weight: 300 ;
+    background-color: #cdf1ff;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+.content {
+    padding: 0 0.938rem;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+}
 
 
+.header {
+    width:100%;
+    height: 7em;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-image:url('../img/photo-boxes.jpg');
+}
 
+.introduction h1 {
+   font-size: 4em;
+}
+
+.user-data {
+    height: 20px;
+    position: relative;
+    border: 2px solid #cdcdcd;
+    border-color: rgba(0,0,0,.14);
+    background-color: AliceBlue ;   ;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+
+li {
+    height: 1.5em;
+}
+
+.closedItem {
+    text-decoration: line-through;
+}
+
+li .checkbx {
+    float: left;
+    margin-right: 16px;
+    vertical-align: bottom;
+}
+
+/*----------
+li .checkbx_chkd {
+    float: left;
+    margin-right: 16px;
+    vertical-align: bottom;
+}
+----------*/
+
+li .trash {
+    float: right;
+    vertical-align: bottom;
+    margin-right: 10em;
+}
+
+.button {
+    background-color: #ADAF4C; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1em;
+    margin-left: 2.5em;
+}
+
+/* remember to define focus styles! */
+.button:focus {
+    outline: 0;
+}
 
 
 
@@ -200,6 +281,52 @@ body {
     /* Style adjustments for high resolution devices */
 }
 
+
+@media only screen and  (max-width: 75rem) {
+    .content {
+        width: 60%;
+    }
+}
+
+@media only screen and  (max-width: 62rem) {
+    .content {
+        width: 60rem;
+    }
+}
+
+@media only screen and (max-width: 48rem) {
+    .content {
+        width: 46rem;
+    }
+
+    .introduction h1 {
+        font-size: 1.5em;
+    }
+
+
+}
+
+@media only screen and (max-width: 23.45rem) {
+    .content {
+        width: 24rem;
+    }
+
+    .introduction {
+        border: 2px red solid;
+    }
+
+    .introduction h1 {
+        font-size: 1.0em;
+    }
+
+    li .trash {
+        margin-right: 0;
+    }
+
+}
+
+
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -277,74 +404,5 @@ body {
     h3 {
         page-break-after: avoid;
     }
-}
-
-.user-data {
-    height: 20px;
-    position: relative;
-    border: 2px solid #cdcdcd;
-    border-color: rgba(0,0,0,.14);
-    background-color: AliceBlue ;   ;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.content {
-    width: 25em;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-.introduction, .makelist {
-    margin-left: 2em;
-}
-
-li {
-    height: 1.5em;
-}
-
-.closedItem {
-    text-decoration: line-through;
-}
-
-li .checkbx {
-    float: left;
-    margin-right: 16px;
-    vertical-align: bottom;
-}
-
-/*----------
-li .checkbx_chkd {
-    float: left;
-    margin-right: 16px;
-    vertical-align: bottom;
-}
-----------*/
-
-li .trash {
-    float: right;
-    vertical-align: bottom;
-    margin-left: -2em;
-}
-
-.button {
-    background-color: #ADAF4C; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 12px;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 1em;
-    margin-left: 2.5em;
-}
-
-/* remember to define focus styles! */
-.button:focus {
-    outline: 0;
 }
 
