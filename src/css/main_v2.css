@@ -321,6 +321,28 @@ li .trash {
 }
 
 
+/*
+@media only screen and (max-width: 23.45rem) {
+    .wrapper {
+        width: 24rem;
+    }
+
+    .introduction {
+        border: 2px red solid;
+    }
+
+    .introduction h1 {
+        font-size: 1.0em;
+    }
+
+    li .trash {
+        margin-right: 0;
+    }
+
+}
+*/
+
+
 
 /* ==========================================================================
    Print styles.
