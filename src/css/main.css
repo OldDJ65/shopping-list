@@ -95,6 +95,18 @@ body {
    Author's custom styles
    ========================================================================== */
 
+.header .indtroduction .makelist .showlist .clear-all {
+    width: 90%;
+}
+
+.header {
+    border-bottom: 0.5em solid darkblue;
+}
+
+.showlist {
+    width: 80%;
+}
+
 .content {
     padding: 0 0.938rem;
     box-sizing: border-box;
@@ -104,12 +116,12 @@ body {
 
 
 .header {
-    width:100%;
-    height: 7em;
+    /*width:100%;*/
+    height: 9em;
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
-    background-image:url('../img/photo-boxes.jpg');
+    background-image:url('../img/photo-grocery.jpg');
 }
 
 .introduction h1 {
@@ -281,33 +293,47 @@ li .trash {
     /* Style adjustments for high resolution devices */
 }
 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('desktop first') styles.
+   Modify as content requires.
+   ========================================================================== */
 
-@media only screen and  (max-width: 75rem) {
-    .content {
-        width: 60%;
+
+@media only screen and  (max-width: 44rem) {
+    li .trash {
+        float: right;
+        vertical-align: bottom;
+        margin-right: 1em;
+    }
+
+    .user-data {
+        margin-top: 0.3em;
     }
 }
 
-@media only screen and  (max-width: 62rem) {
-    .content {
-        width: 60rem;
-    }
-}
-
-@media only screen and (max-width: 48rem) {
-    .content {
-        width: 46rem;
-    }
-
+@media only screen and  (max-width: 36rem) {
     .introduction h1 {
         font-size: 1.5em;
     }
 
-
+    .showlist {
+        width: 90%;
+    }
 }
 
+
+@media only screen and (max-width: 23rem) {
+
+    .header {
+        display: none;
+    }
+}
+
+
+/*
 @media only screen and (max-width: 23.45rem) {
-    .content {
+    .wrapper {
         width: 24rem;
     }
 
@@ -324,6 +350,7 @@ li .trash {
     }
 
 }
+*/
 
 
 
